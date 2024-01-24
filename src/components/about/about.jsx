@@ -9,7 +9,7 @@ import CardImage from "../../assets/paula.png";
 
 export default function MyCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="card" sx={{ maxWidth: 450 }}>
       <CardMedia
         component="img"
         alt="Foto de Paula"
@@ -20,6 +20,11 @@ export default function MyCard() {
         <Typography gutterBottom variant="h5" component="div">
           Ana Paula Garfias
         </Typography>
+        <div>
+          <p>Desarrolladora Java Full Stack</p>
+          <p>Morelia, Mich</p>
+          <p>paulagarfias4@gmail.com</p>
+        </div>
         <Typography variant="body2" color="text.secondary">
           Me considero una persona proactiva, con grandes interenses en seguirme
           preparando para el futuro. A la par tengo una gran afición por las
@@ -29,8 +34,20 @@ export default function MyCard() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button
+          size="small"
+          target="_blank"
+          href="https://github.com/anapaulagarfias"
+        >
+          GitHub
+        </Button>
+        <Button
+          size="small"
+          target="_blank"
+          href="https://www.linkedin.com/in/paulagarfias"
+        >
+          LinkedIn
+        </Button>
       </CardActions>
     </Card>
   );
