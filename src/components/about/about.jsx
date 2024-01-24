@@ -6,6 +6,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardImage from "../../assets/paula.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import WorkIcon from "@mui/icons-material/Work";
 
 export default function MyCard() {
   return (
@@ -16,7 +19,7 @@ export default function MyCard() {
         height="500"
         image={CardImage}
       />
-      <CardContent>
+      <CardContent sx={{ background: "#66b3c6" }}>
         <Typography gutterBottom variant="h5" component="div">
           Ana Paula Garfias
         </Typography>
@@ -35,18 +38,20 @@ export default function MyCard() {
       </CardContent>
       <CardActions>
         <Button
+          sx={{ color: "black" }}
           size="small"
           target="_blank"
           href="https://github.com/anapaulagarfias"
         >
-          GitHub
+          <GitHubIcon fontSize="large"></GitHubIcon>
         </Button>
         <Button
+          sx={{ color: "black" }}
           size="small"
           target="_blank"
           href="https://www.linkedin.com/in/paulagarfias"
         >
-          LinkedIn
+          <LinkedInIcon fontSize="large"></LinkedInIcon>
         </Button>
       </CardActions>
     </Card>
