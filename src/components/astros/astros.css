@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-container {
+  width: 100%;
+  padding: 20px;
+  margin: 0px;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+.card {
+  background-color: #ffebc4;
+  min-width: 150px;
+  border-radius: 20px;
+  flex-direction: column;
+  margin: 100px;
+}
+
+.card-name {
+  font-size: 1.5rem;
+}
+
+.card-station {
+  font-size: 1.2;
+}
+
+p {
+  color: black;
+}
